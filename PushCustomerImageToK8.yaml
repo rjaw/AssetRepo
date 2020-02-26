@@ -18,7 +18,7 @@ spec:
       containers:
       - name: customer-ismicroservicesruntime
         image: DOCKERREPO/IMAGETAG
-        imagePullPolicy: IfNotPresent        
+        imagePullPolicy: Always        
         ports:
         - containerPort: 5555
       imagePullSecrets:
@@ -45,7 +45,7 @@ metadata:
   namespace: presales-default
 spec:	
   rules:
-  - host: ENDPOINT.daeipresal40611.k8s.eur.ad.sag
+  - host: daeipresal40611.k8s.eur.ad.sag
     http:
       paths:
       - backend:
@@ -54,7 +54,7 @@ spec:
         path: /
   tls:
   - hosts:
-    - ENDPOINT.daeipresal40611.k8s.eur.ad.sag
+    - daeipresal40611.k8s.eur.ad.sag
     secretName: daeipresal40611 
  
 
