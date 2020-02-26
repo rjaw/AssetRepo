@@ -45,7 +45,7 @@ metadata:
   namespace: presales-default
 spec:	
   rules:
-  - host: daeipresal40611.k8s.eur.ad.sag
+  - host: demo-rjaw.daeipresal40611.k8s.eur.ad.sag
     http:
       paths:
       - backend:
@@ -54,7 +54,7 @@ spec:
         path: /
   tls:
   - hosts:
-    - daeipresal40611.k8s.eur.ad.sag
+    - demo-rjaw.daeipresal40611.k8s.eur.ad.sag
     secretName: daeipresal40611 
  
 
